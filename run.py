@@ -151,6 +151,10 @@ stock_data = main()
 
 
 def get_stock_values(data):
+    """ 
+    This collects heading name and recomended number of sambo to used at end of program.
+    
+    """ 
     headings = SHEET.worksheet("stock").row_values(1)
     my_dict = {k:v for k,v in zip(headings, data)}
     return my_dict
